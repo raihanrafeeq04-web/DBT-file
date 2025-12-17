@@ -1,0 +1,1 @@
+select comments as review_text, sentiment as review_sentiment from {{ ref('raw_reviews')}}
