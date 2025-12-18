@@ -1,0 +1,14 @@
+models:
+  - name: raw_hosts
+    description: gives details about hosts
+    columns:
+      - name: id
+        description: '{{ doc("testdoc1") }}'
+        data_tests:
+          - unique
+          - not_null
+      - name: is_superhost
+        data_tests:
+          - accepted_values:
+             values: ['t','f']
+
